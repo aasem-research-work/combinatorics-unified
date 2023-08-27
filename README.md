@@ -52,8 +52,3 @@
     ```bash
     python main.py
     ```
-
-### Notes
-- Replace `your-environment-name` with the name you want to give to your conda environment.
-- Replace `your-username` with your GitHub username.
-- Replace `package-name` with any additional packages you need.
