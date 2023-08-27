@@ -7,7 +7,7 @@
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/your-username/combinatorics-unified.git
+    git clone https://github.com/aasem-research-work/combinatorics-unified.git
     ```
 
 2. **Navigate to the Project Directory**
