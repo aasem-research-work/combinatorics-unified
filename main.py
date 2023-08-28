@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QFileDi
 
 from ui_main import Ui_MainWindow
 from pass1 import pass1
-from pass2 import count_frequency_dic2df, swap_dic2df
+from pass2 import count_frequency_dic2df, swap_dic2df,bruteforce_dic2df
 import pandas as pd
 from ast import literal_eval
 
@@ -20,8 +20,12 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.actionExport.triggered.connect(self.apply_export)
         self.pushButton_genCombinations.clicked.connect(self.apply_pass1)
         self.pushButton_swap.clicked.connect(self.apply_swap)
-        self.pushButton_Rearrange.clicked.connect(
-            self.get_selected_items_from_table)
+        self.pushButton_Rearrange.clicked.connect( self.get_selected_items_from_table)
+        #self.pushButton_Rearrange.clicked.connect( self.apply_bruteforce)
+        
+    def apply_bruteforce(self):
+        #bruteforce_dic2df(self.pass2_df)
+        pass
 
     def get_info_from_imported(self, df):
         unique_values = set()

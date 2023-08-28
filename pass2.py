@@ -107,6 +107,39 @@ def count_frequency_dic2df(df, n):
 
     return returned_df, stats_df
 
+def bruteforce_dic2df(df):
+    row_count, col_count = df.shape
+
+    # Start the row and column index from 0
+    row = 0
+    col = 0
+
+    # Outer loop
+    while row < row_count:
+        # Get cell value at [row, col]
+        cellA = df.iloc[row, col]
+        row_A = row
+        col_A_index = col
+
+        # Inner loop
+        for next_row in range(row + 1, row_count):
+            # Get cell value at [next_row, col]
+            cellB = df.iloc[next_row, col]
+            row_B = next_row
+            col_B_index = col
+
+            # Perform swap
+            swap_dic2df(df, col_A_index=row_A, row_A=col_A_index,
+                        col_B_index=row_B, row_B=col_B_index)
+
+        # Move to the next column and reset row to 0 for the next iteration
+        col += 1
+        row = 0
+
+        # If reached the last column, break the loop
+        if col >= col_count:
+            break
+
 
 if __name__ == "__main__":
     # Load output.xlsx and extract "Sheet1" as df

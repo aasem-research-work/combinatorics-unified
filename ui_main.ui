@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>856</width>
-    <height>586</height>
+    <height>713</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>290</y>
+      <y>380</y>
       <width>561</width>
       <height>271</height>
      </rect>
@@ -95,7 +95,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>230</y>
+      <y>250</y>
       <width>261</width>
       <height>56</height>
      </rect>
@@ -126,14 +126,17 @@
      <item row="1" column="1">
       <widget class="QPushButton" name="pushButton_swap">
        <property name="text">
-        <string>Swap</string>
+        <string>Swap [F8]</string>
+       </property>
+       <property name="shortcut">
+        <string>F8</string>
        </property>
       </widget>
      </item>
      <item row="1" column="2">
       <widget class="QPushButton" name="pushButton_Rearrange">
        <property name="text">
-        <string>Rearrange</string>
+        <string>&lt;Apply Method&gt;</string>
        </property>
       </widget>
      </item>
@@ -143,7 +146,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>290</y>
+      <y>380</y>
       <width>261</width>
       <height>271</height>
      </rect>
@@ -161,7 +164,7 @@
       <x>280</x>
       <y>220</y>
       <width>561</width>
-      <height>61</height>
+      <height>151</height>
      </rect>
     </property>
    </widget>
